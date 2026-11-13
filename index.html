@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rádio Alicerce</title>
+<style>
+body {
+  margin: 0;
+  background: #071b38;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+main { padding: 55px 20px; }
+h1 { color: #ffc45c; }
+p { line-height: 1.6; }
+button {
+  background: #e9a62b;
+  color: #071b38;
+  border: none;
+  border-radius: 30px;
+  padding: 16px 35px;
+  font-size: 18px;
+  font-weight: bold;
+}
+audio {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 25px;
+}
+</style>
+</head>
+<body>
+<main>
+<h1>📻 Rádio Alicerce</h1>
+<p>Conhecimento, Cultura e Cidadania</p>
+<h2>Ao vivo, para você!</h2>
+<button onclick="document.getElementById('radio').play().catch(() => {})">
+▶ Ouvir agora
+</button>
+<div>
+<audio id="radio" controls preload="none">
+<source src="https://aigacast.servercast.com.br/ouvir/radio-alicerce" type="audio/mpeg">
+</audio>
+</div>
+<p>Educação, cultura, informação e música em uma só sintonia.</p>
+</main>
+</body>
+</html>
